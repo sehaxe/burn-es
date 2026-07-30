@@ -1,4 +1,4 @@
-# burn-es — Evolution Strategies for Burn
+# burn-es - Evolution Strategies for Burn
 
 [![CI](https://github.com/sehaxe/burn-es/actions/workflows/ci.yml/badge.svg)](https://github.com/sehaxe/burn-es/actions/workflows/ci.yml)
 [![Crates.io](https://img.shields.io/crates/v/burn-es)](https://crates.io/crates/burn-es)
