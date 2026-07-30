@@ -1,0 +1,22 @@
+[package]
+name = "burn-es"
+version = "0.1.0"
+edition = "2021"
+license = "AGPL-3.0"
+description = "Evolution Strategies for Burn — ternary/eggroll/antithetic weight mutation + rank fitness"
+keywords = ["burn", "evolution-strategies", "mutation", "eggroll", "ternary"]
+repository = "https://github.com/sehaxe/burn-es"
+homepage = "https://github.com/sehaxe/burn-es"
+readme = "README.md"
+
+[features]
+default = ["std"]
+std = ["burn/std", "burn-tensor/std"]
+
+[dependencies]
+burn = { version = "0.21", default-features = false }
+burn-tensor = "0.21"
+
+[dev-dependencies]
+burn-ndarray = { version = "0.21", features = ["blas-openblas"] }
+burn = { version = "0.21", features = ["ndarray"] }
