@@ -193,10 +193,7 @@ mod tests {
             .chunks_exact(4)
             .map(|b| f32::from_le_bytes(b.try_into().unwrap()))
             .collect();
-        assert!(
-            vals.iter().any(|&v| v == 0.0),
-            "must contain zeros: {vals:?}"
-        );
+        assert!(vals.contains(&0.0), "must contain zeros: {vals:?}");
         assert!(
             vals.iter().all(|&v| v == 0.0 || v.abs() > 1.0),
             "nonzero entries must be +/-scale: {vals:?}"
